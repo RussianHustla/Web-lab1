@@ -8,8 +8,12 @@ $(document).ready(function () {
         x = Number($(this).text());
         $('.btn-x').removeClass('selected-x');
         $(this).addClass('selected-x');
-        // alert("тип: " + typeof(x) + ", значение: " + x);
+        console.log("тип: " + typeof(x) + ", значение: " + x);
     })
+
+    // $('.btn-x').on('click', function () {
+    //   console.log("salam");
+    // })
 
     $('#check-btn').on('click', function () {
 

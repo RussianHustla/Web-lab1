@@ -3,15 +3,109 @@ html {
     min-height: 100%;
 }
 
+p, a {
+    color: #00695C;
+}
+
+h1, h2 {
+    color: #004D40;
+}
+
 body {
-    background-color: white;
-    margin-bottom: 80px; /* Margin bottom by footer height */
+    background-color: #80CBC4;
+    margin-bottom: 60px; /* Margin bottom by footer height */
     font-family: 'Roboto', sans-serif;
 }
 
 .selected-x {
-    background-color: dodgerblue;
-    color: white;
+    border-radius: 16px;
+    background: #80CBC4;
+    box-shadow: inset 5px 5px 10px #76bbb4,
+    inset -5px -5px 10px #8adbd4 !important;
+}
+
+.neo-select {
+    color: #00897B;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    border-radius: 16px;
+    background: #B2DFDB;
+    box-shadow:
+    inset 5px 5px 10px #76bbb4,
+    inset -5px -5px 10px #8adbd4;
+}
+
+.neo-select:focus {
+    color: #00897B;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    border-radius: 16px;
+    background: #B2DFDB;
+    box-shadow:  6px 6px 11px #619a95,
+    -6px -6px 11px #9ffcf3,
+    inset 5px 5px 10px #76bbb4,
+    inset -5px -5px 10px #8adbd4;
+}
+
+.neo-submit {
+    color: #00897B;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    width: 200px;
+    height: 45px;
+    border-radius: 16px;
+    background: #80CBC4;
+    box-shadow:  6px 6px 11px #619a95,
+    -6px -6px 11px #9ffcf3,
+    inset 5px 5px 10px #76bbb4,
+    inset -5px -5px 10px #8adbd4;
+}
+
+.neo-submit:active {
+    border-radius: 16px;
+    background: #80CBC4;
+    box-shadow: inset 5px 5px 10px #76bbb4,
+    inset -5px -5px 10px #8adbd4;
+}
+
+.neo-btn {
+    color: #00897B;
+    margin: 10px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 16px;
+    background: #80CBC4;
+    box-shadow:  6px 6px 11px #619a95,
+    -6px -6px 11px #9ffcf3,
+    inset 5px 5px 10px #76bbb4,
+    inset -5px -5px 10px #8adbd4;
+}
+
+.neo-btn:active {
+    background-color: #80CBC4;
+    border-radius: 16px;
+    box-shadow: inset 5px 5px 10px #6fb1ab,
+    inset -5px -5px 10px #91e5dd !important;
+}
+
+.neo-btn:focus {
+    border-radius: 16px;
+    background: #80CBC4;
+    box-shadow: inset 5px 5px 10px #76bbb4,
+    inset -5px -5px 10px #8adbd4;
+}
+
+button:active, button:focus {
+    outline: none !important;
+}
+button::-moz-focus-inner {
+    border: 0 !important;
 }
 
 .table-wrapper {
@@ -20,16 +114,24 @@ body {
     overflow-y: auto;
 }
 
+.graphic-box {
+    padding: 30px;
+}
+
 header {
-    background-color: aquamarine;
+    background-color: #4DB6AC;
     margin-bottom: 50px;
+    box-shadow:  6px 6px 11px #43a198,
+    -6px -6px 11px #9ffcf3;
 }
 
 footer {
-    background-color: aquamarine;
+    background-color: #4DB6AC;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 80px; /* Set the fixed height of the footer here */
+    height: 60px; /* Set the fixed height of the footer here */
     line-height: 60px; /* Vertically center the text there */
+    box-shadow:  6px 6px 11px #9ffcf3,
+    -6px -6px 20px #92e6de;
 }
