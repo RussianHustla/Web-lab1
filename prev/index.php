@@ -14,6 +14,11 @@
 
 <!--Господи Иисус помоги-->
 
+
+<!--    --><?php
+//    $text = 'salam aleikuuuum!';
+//    echo $text;
+//    ?>
     <header>
         <div class="container-fluid">
             <div class="row">
@@ -30,7 +35,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 text-center">
-                    <div class="neo-select graphic-box">
+                    <div class="graphic-box">
                         <svg width="300" height="300" class="svg-graph" xmlns="http://www.w3.org/2000/svg">
 
                             <!--            Линии оси-->
@@ -88,7 +93,7 @@
 
                 <div class="col-lg-4 text-center">
                     <p>Выберите R:</p>
-                    <select class="neo-select custom-select" id="select-r">
+                    <select class="custom-select" id="select-r">
                         <option value="1">1</option>
                         <option value="1.5">1.5</option>
                         <option value="2">2</option>
@@ -97,68 +102,34 @@
                     </select>
 
                     <p>Выберите X:</p>
-<!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-4</button>-->
-<!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-3</button>-->
-<!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-2</button>-->
-<!--                    <div class="w-100"></div>-->
-<!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-1</button>-->
-<!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">0</button>-->
-<!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">1</button>-->
-<!--                    <div class="w-100"></div>-->
-<!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">2</button>-->
-<!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">3</button>-->
-<!--                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">4</button>-->
-
-                    <div class="row">
-                        <div class="col-4 text-center">
-                            <button type="button" class="btn-x neo-btn">-4</button>
-                        </div>
-                        <div class="col-4 text-center">
-                            <button type="button" class="btn-x neo-btn">-3</button>
-                        </div>
-                        <div class="col-4 text-center">
-                            <button type="button" class="btn-x neo-btn">-2</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 text-center">
-                            <button type="button" class="btn-x neo-btn">-1</button>
-                        </div>
-                        <div class="col-4 text-center">
-                            <button type="button" class="btn-x neo-btn">0</button>
-                        </div>
-                        <div class="col-4 text-center">
-                            <button type="button" class="btn-x neo-btn">1</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 text-center">
-                            <button type="button" class="btn-x neo-btn">2</button>
-                        </div>
-                        <div class="col-4 text-center">
-                            <button type="button" class="btn-x neo-btn">3</button>
-                        </div>
-                        <div class="col-4 text-center">
-                            <button type="button" class="btn-x neo-btn">4</button>
-                        </div>
-                    </div>
+                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-4</button>
+                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-3</button>
+                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-2</button>
+                    <div class="w-100"></div>
+                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">-1</button>
+                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">0</button>
+                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">1</button>
+                    <div class="w-100"></div>
+                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">2</button>
+                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">3</button>
+                    <button type="button" class="btn-x btn btn-outline-primary m-2 px-4" id="btn-x">4</button>
 
 
                     <p>Введите Y:</p>
-                    <input data-rule="input-y" type="text" class="neo-select form-control" id="input-y" placeholder="от -3 до 3">
+                    <input data-rule="input-y" type="text" class="form-control" id="input-y" placeholder="от -3 до 3">
 
                 </div>
 
                 <div class="col-lg-4 text-center">
-                    <div class="table-wrapper neo-select text-center">
-                        <div class="output" id="output"></br>Здесь будет таблица</div>
+                    <div class="table-wrapper text-center">
+                        <div class="output" id="output">Результат отсутствует</div>
                     </div>
 
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 text-center my-4">
-                    <button type="button" class="neo-submit" id="check-btn">Погнали!</button>
+                    <button type="button" class="btn btn-outline-success" id="check-btn">Погнали!</button>
                 </div>
             </div>
         </div>
@@ -168,7 +139,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
-                    <a href="https://github.com/RussianHustla/Web-lab1">гитхаб</a>
+                    <a href="https://github.com/RussianHustla">гитхаб</a>
                 </div>
             </div>
         </div>
