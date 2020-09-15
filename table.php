@@ -10,7 +10,9 @@
     </tr>
     </thead>
     <tbody>
-    <?php foreach ($_SESSION['history'] as $value) { ?>
+    <?php
+    $reversed = array_reverse($_SESSION['history'], true);
+    foreach ($reversed as $value) { ?>
         <tr>
                 <td><?php echo $value[0] ?></td>
                 <td><?php echo $value[1] ?></td>
